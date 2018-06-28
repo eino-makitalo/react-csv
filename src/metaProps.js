@@ -8,6 +8,7 @@ export const propTypes = {
   target: string,
   separator: string,
   filename: string,
+  prefixdata: string,
   uFEFF: bool
 };
 

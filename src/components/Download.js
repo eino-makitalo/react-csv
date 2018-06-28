@@ -30,9 +30,9 @@ class CSVDownload extends React.Component {
   }
 
   componentDidMount(){
-    const {data, headers, separator, uFEFF, target, specs, replace} = this.props;
+    const {data, headers, separator, prefixdata, uFEFF, target, specs, replace} = this.props;
     this.state.page = window.open(
-        this.buildURI(data, uFEFF, headers, separator), target, specs, replace
+        this.buildURI(data, uFEFF, headers, separator,prefixdata), target, specs, replace
     );
   }
 
